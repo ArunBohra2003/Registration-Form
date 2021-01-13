@@ -1,0 +1,184 @@
+/* Basic resets */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999;
+
+   /* Background image */
+    background: url(bg-registration-form-9.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* Boxes and heading styles */
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #3E91F7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin: 0 0 1rem;
+}
+
+.mainBox {
+    position: absolute;
+    top: 5.5rem;
+    left: 12rem;
+    display: inline-block;
+    background-image: url(bg-inner.png);
+}
+
+.contentBox {
+    background-color: #eee;
+    margin: 1rem;
+    padding: 4rem 5rem;
+}
+
+.formGroup input {
+    padding: 1.5rem;
+    border: 1px solid #E6E6E6;
+    color: inherit;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #E6E6E6;
+}
+
+label {
+    color: #4C4C4C;
+}
+
+.submitButton button {
+    border: 1px solid #3E91F7;
+    border-radius: 5px;
+    background-color: #3E91F7;
+    color: #eee;
+    transition: all .3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.submitButton button:hover {
+    background-color: #0072FD;
+    border: 1px solid #0072FD;
+}
+
+.dummy {
+    visibility: hidden;
+}
+
+@media (min-width: 750px) {
+
+/* Helper classes */
+
+.margin-right {
+    margin-right: 3rem;
+}
+
+/* The form styles */
+
+.formGroup {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 1.6rem;
+}
+
+.formGroup input {
+    width: 90%;
+}
+
+.CheckBox {
+    margin: 1rem 0;
+}
+
+.CheckBox label {
+    display: inline-block;
+}
+
+/* Submit button styles */
+
+.submitButton {
+    margin-top: 2rem;
+}
+
+.submitButton button {
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+}
+
+
+.first {
+    position: absolute;
+}
+
+button:hover .first {
+    position: absolute;
+    visibility: visible;
+    animation: slideInLeft .5s;
+}
+
+.second {
+    position: absolute;
+}
+
+button:hover .second {
+    animation: slideOutTop .5s;
+}
+
+
+/* Keyframes animations */
+
+
+/* To manipulate text coming from left */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* To manipulate text coming from top */
+
+@keyframes slideOutTop {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+}
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="media.css">
+
+        <title>Registration From</title>
+    </head>
+    <body>
+        <div class="mainBox">
+
+            <div class="contentBox">
+                <h1>Find a room</h1>
+
+                <div class="theForm">
+                    <form class="booking-form" action="index.html" method="post">
+
+                        <div class="formGroup">
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" class="name margin-right" id="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="name">Phone*</label>
+                            <input type="tel" name="number" class="number" id="number" placeholder="Phone" required>
+                        </div>
+
+                        <br>
+
+                        <div class="formGroup">
+                            <label for="checkIn">Check-in*</label>
+                            <input type="date" name="checkIn" class="chckIn margin-right" id="checkIn" required>
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="CheckOut">Check-out*</label>
+                            <input type="date" name="checkOut" class="checkOut" id="checkOut" min="14-01-2021" required>
+                        </div>
+
+                        <br>
+
+                        <div class="formGroup">
+                            <label for="adults">Adults*</label>
+                            <input type="number" name="adults" class="adults margin-right" id="adults" value="1" min="1" max="5" required>
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="children">Children*</label>
+                            <input type="number" name="children" class="children" id="children" value="1" min="1" max="5" required>
+                        </div>
+
+                        <div class="CheckBox">
+                            <input type="checkbox" name="checkbox" class="checkbox" id="checkbox">
+                            <label for="checkbox">No one rejects, dislikes, or avoids pleasure itself.</label>
+                        </div>
+
+                        <div class="submitButton">
+                            <button type="submit"><span class="first">Book Room</span><span class="second">Book Room</span><span class="dummy">Book Room</span></button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
